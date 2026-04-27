@@ -134,29 +134,35 @@ Diese Hauptfunktionen sollten als Epics im Product Backlog für die Gruppierung 
 
 [cols="2,2,1", options="header"]
 |===
-| Nutzerbedarf | Hauptfunktion | Priorität
+| Nutzerbedarf | Hauptfunktion (Epic) | Priorität
 
-| Barbetreiber kann Angebot, Kunden, die negativ sind, verwalten
-| Kunden verwalten, Angebot verwalten
+| Kunden möchten für Partys eigene Getränke aus verschiedenen Säften, Alkohol und Toppings kreieren, anstatt nur fertige Cocktails zu kaufen.
+| Individueller Cocktail-Konfigurator
 | Hoch
 
-| Kunden wollen beliebige Zutaten für Ihre Cooktail wählen
-| Zutaten wählen
+| Kunden benötigen beim Zusammenstellen ihrer Kreationen sofortige Preistransparenz (Berechnung nach Milliliter bzw. Topping).
+| Dynamische Preisberechnung & Größenwahl
 | Hoch
 
-| Kunden wollen alle Rechnung der Topping usw. berechnen
-| Kundenbons berechnen
+| Kunden erwarten einen einfachen und unkomplizierten Kaufabschluss mit verschiedenen Bezahlmöglichkeiten und Bestellbestätigung.
+| Checkout-Prozess & Zahlung
 | Hoch
 
-| Kunden wollen beliebige Zahlungmethode zu wählen
-| Zahlungsmethode wahlen
+| Kunden möchten eine Übersicht ihrer bisherigen Käufe sehen und bei Fehlern innerhalb von 24h stornieren können.
+| Kunden-Self-Service (Historie & Storno)
 | Mittel
 
-| Barbetreiber, Mitarbeiter können die Bestellung verwalten
-| Bestellung verwalten
+| Die Bar-Mitarbeiter müssen die eingehenden Bestellungen vor Ladenöffnung (17 Uhr) effizient sichten, abarbeiten und organisieren können.
+| Bestellmanagement-Dashboard (Backend)
 | Hoch
 
+| Der Barbetreiber möchte sich vor Zahlungsausfällen schützen (Sperrung) und gleichzeitig Stammkunden mit Rabatten binden.
+| Kundenverwaltung & Konditionen
+| Hoch
 
+| Der Barbetreiber möchte den Umsatz steigern, indem er zu besonderen Anlässen (Weihnachten, Geburtstag) gezielte Angebote verschickt.
+| Marketing- & E-Mail-Kampagnen
+| Mittel
 |===
 
 NOTE: Die Reihenfolge entspricht einer ersten groben Priorisierung und wird im Rahmen
@@ -182,20 +188,16 @@ technischen Entscheidungen, die sich daraus ergeben — ohne sie hier zu wiederh
 | Qualitätsziel | Beschreibung | Messkriterium
 
 | Benutzbarkeit
-| Das Produkt ist ohne Einarbeitung nutzbar.
-| Neue Nutzer:innen finden die Kernfunktion innerhalb von 2 Minuten ohne Hilfe.
+| Das Bestellsystem muss so einfach wie möglich gestaltet sein, um Kunden nicht durch einen schwierigen Bestellprozess abzuschrecken
+| Neue Nutzer:innen können eine individuelle Cocktail-Kreation und den Bezahlvorgang ohne Hilfe in unter 3 Minuten abschließen. Die Abbruchquote liegt unter 5 %.
+
+| Korrektheit
+| Bei der Auswahl eigener Kreationen muss der Preis transparent und korrekt nach Milliliter (Zutaten) bzw. Topping errechnet werden
+| 100 % der im Warenkorb angezeigten Preise entsprechen exakt der Summe der ausgewählten Komponenten und Mengen.
 
 | Performance
-| Das Produkt reagiert schnell auf Nutzerinteraktionen.
-| Seitenladezeit unter 2 Sekunden bei normaler Netzwerkverbindung.
-
-| Verfügbarkeit
-| Das Produkt ist während der Hochschulöffnungszeiten zuverlässig erreichbar.
-| Verfügbarkeit ≥ 99 % während Betriebszeiten.
-
-| [Qualitätsziel]
-| [Beschreibung]
-| [Messkriterium]
+| Der Konfigurator muss bei der Auswahl aus 100 Standardcocktails und 120 verschiedenen Zutaten verzögerungsfrei arbeiten.
+| Die Preisaktualisierung und das Laden der Zutatenliste erfolgen in unter 1 Sekunde.
 |===
 
 === Einschränkungen
@@ -207,21 +209,25 @@ organisatorische, rechtliche oder zeitliche Vorgaben._
 |===
 | Einschränkung | Beschreibung | Kategorie
 
-| Betrieb auf Hochschulinfrastruktur
-| Das System muss auf den vorhandenen Servern der Hochschule betrieben werden können.
-| Technisch
+| Bereitstellungsmodell
+| Barbetreiber müssen die Cocktails außer Haus verkaufen können, ohne sich um die Entwicklung eines eigenen Online-Shops kümmern zu müssen
+| Technisch / Organisatorisch
 
-| DSGVO-Konformität
-| Personenbezogene Daten dürfen nur gemäß DSGVO verarbeitet und gespeichert werden.
-| Rechtlich
+| Stornierungsfrist
+| Eine Stornierung der Bestellung durch den Kunden ist nur bis zu 24 Stunden nach dem Bestelleingang zulässig
+| Fachlich
 
-| Projektlaufzeit
-| Das Produkt muss innerhalb eines Semesters (ca. 4 Monate) lieferbar sein.
-| Zeitlich
+| Preis- und Mengenstruktur
+| Versandkosten werden nicht erhoben, sondern auf die Cocktails umgelegt. Zudem gibt es keine Mindest- und Höchstbestellmenge
+| Fachlich
 
-| [Einschränkung]
-| [Beschreibung]
-| [Technisch / Rechtlich / Organisatorisch / Zeitlich]
+| Vorgegebene Gebindegrößen
+| Für die Abfüllung sind ausschließlich die definierten Flaschengrößen von 1 Liter, 1,5 Liter sowie 2 Liter zulässig
+| Fachlich
+
+|DSGVO-Konformität
+|Da Kundenkonten mit Bestellhistorie, E-Mail-Marketing und Zahlungsinformationen verwaltet werden, müssen personenbezogene Daten gemäß DSGVO verarbeitet werden.
+|Rechtlich
 |===
 
 

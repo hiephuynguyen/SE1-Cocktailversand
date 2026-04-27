@@ -20,27 +20,29 @@ Technische Implementierungsdetails gehören nicht hierher!
 | Begriff / Abkürzung | Definition | Synonyme / Abgrenzungen
 
 | Bestellung
-| Eine vom Nutzer ausgelöste Anforderung, ein oder mehrere Produkte zu erwerben.
+| Eine vom Kunden ausgelöste Anforderung für Cocktails. Sie enthält eine Bezahlmöglichkeit und wird mit einer Bestellbestätigung abgeschlossen. Eine Stornierung ist bis zu 24 Stunden nach Eingang möglich
   Eine Bestellung durchläuft verschiedene Status (offen, bezahlt, versendet, abgeschlossen).
-| Auftrag; nicht zu verwechseln mit „Warenkorb" (noch nicht abgeschlossen)
+| Auftrag
 
-| Nutzer
-| Eine Person, die das System aktiv verwendet. Nutzer müssen registriert und eingeloggt
-  sein, um Bestellungen aufzugeben.
-| Anwender, Benutzer; abzugrenzen von „Administrator"
+| Cocktail
+| Das im System angebotene Mischgetränk für den Versand. Es wird in definierte Flaschengrößen (1 Liter, 1,5 Liter, 2 Liter) abgefüllt.
+| Drink, Getränk
 
-| Produkt
-| Ein im System angebotener Artikel, der bestellt werden kann. Ein Produkt hat eine
-  Bezeichnung, einen Preis und eine Verfügbarkeit.
-| Artikel, Ware
+| Eigene Kreation
+| Ein individuell vom Kunden aus Zutaten zusammengestellter Cocktail. Der Preis errechnet sich dabei transparent nach Milliliter oder Topping.
+| Individual-Cocktail
 
-| [Begriff]
-| [Präzise, fachliche Definition in 1–3 Sätzen]
-| [Synonyme oder Abgrenzungen zu ähnlichen Begriffen]
+| Kunde (Privatkunde)
+| Eine Person, die das System nutzt, um Cocktails für Partys oder Hochzeiten zu bestellen. Ein Kunde kann eine Bestellhistorie einsehen, bei Nichtzahlung gesperrt werden oder als Stammkunde Rabatte erhalten.
+| Endkunde; abzugrenzen von „Barbetreiber“ oder „Mitarbeiter“
 
-| [Begriff]
-| [Präzise, fachliche Definition in 1–3 Sätzen]
-| [Synonyme oder Abgrenzungen zu ähnlichen Begriffen]
+| Standardcocktail
+| Ein von der Bar vordefiniertes Rezept. Insgesamt bietet die Bar 100 verschiedene Standardcocktails an
+| Fertiger Cocktail
+
+| Zutat
+| Bestandteil eines Cocktails, wovon es 120 verschiedene gibt. Die Zutaten unterteilen sich in alkoholische Getränke, Säfte und Toppings.
+| Inhaltsstoff
 |===
 
 
